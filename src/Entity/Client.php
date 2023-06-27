@@ -25,12 +25,12 @@ class Client
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Prénom;
+    private $prenom;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $Nn°Téléphone;
+    private $telephone;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -60,26 +60,26 @@ class Client
         return $this;
     }
 
-    public function getPrénom(): ?string
+    public function getPrenom(): ?string
     {
-        return $this->Prénom;
+        return $this->prenom;
     }
 
-    public function setPrénom(string $Prénom): self
+    public function setPrenom(string $prenom): self
     {
-        $this->Prénom = $Prénom;
+        $this->prenom = $prenom;
 
         return $this;
     }
 
-    public function getNn°Téléphone(): ?int
+    public function getTelephone(): ?int
     {
-        return $this->Nn°Téléphone;
+        return $this->telephone;
     }
 
-    public function setNn°Téléphone(int $Nn°Téléphone): self
+    public function setTelephone(int $telephone): self
     {
-        $this->Nn°Téléphone = $Nn°Téléphone;
+        $this->telephone = $telephone;
 
         return $this;
     }
