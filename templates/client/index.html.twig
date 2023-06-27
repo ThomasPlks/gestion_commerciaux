@@ -10,9 +10,10 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>Prénom</th>
-                <th>Nn°Téléphone</th>
+                <th>Prenom</th>
+                <th>telephone</th>
                 <th>Adresse</th>
+                <th>Type de client</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,6 +25,7 @@
                 <td>{{ client.Prenom }}</td>
                 <td>{{ client.telephone }}</td>
                 <td>{{ client.adresse }}</td>
+                <td>{{ client.TypeClient }}</td>
                 <td>
                     <a href="{{ path('app_client_show', {'id': client.id}) }}">show</a>
                     <a href="{{ path('app_client_edit', {'id': client.id}) }}">edit</a>
